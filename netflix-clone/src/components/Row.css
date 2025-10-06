@@ -1,0 +1,42 @@
+.row {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.row__posters {
+  display: flex;
+  flex-wrap: nowrap;      /* keep row horizontal */
+  overflow-x: auto;       /* horizontal scroll */
+  overflow-y: hidden;
+  padding: 20px 0;
+  align-items: flex-start; /* all posters aligned at top */
+  gap: 10px;               /* consistent spacing */
+}
+
+.row__posterContainer {
+  flex: 0 0 auto;          /* prevent flex item from shrinking */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;            /* fixed width for all */
+}
+
+.row__poster {
+  width: 100%;
+  height: 240px;           /* fixed height for all */
+  object-fit: cover;       /* crop image neatly */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__title {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #fff;
+  word-break: break-word;  /* keep long titles within box */
+}
