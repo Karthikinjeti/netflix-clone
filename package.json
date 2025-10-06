@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "netflix-clone",
   "version": "0.1.0",
   "private": true,
@@ -21,8 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,11 +42,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-=======
-  "dependencies": {
-    "axios": "^1.12.2",
-    "movie-trailer": "^3.2.2",
-    "react-youtube": "^10.1.0"
->>>>>>> e7d8e31ff3c26b689eada7e5814326e05d25dd02
   }
 }
